@@ -15,7 +15,7 @@ class GuruController extends Controller
 {
 	public function upload_materi(Request $request)
 	{
-
+		// dd($request->all());
 		$this->validate($request, [
 			'mapel_id' => 'required',
 			'catatan' => 'required',
@@ -101,7 +101,7 @@ class GuruController extends Controller
 			'judul' => $request->judul,
 			'catatan' => $request->catatan,
 			'file' => $nama_file,
-			'deadline' => $deadline,
+			'deadline' => $request->deadline,
 		]);
 
 

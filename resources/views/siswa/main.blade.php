@@ -7,21 +7,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="{{asset('public/bootstrap/css/bootstrap.css')}}">
   <!-- Place your kit's code here -->
   <!-- fontawesom -->
   <script src="https://kit.fontawesome.com/70d50d2d9f.js" crossorigin="anonymous"></script>
-  <!-- <link rel="stylesheet" href="../fontawesome/css/fontawesome.css">
-  <link rel="stylesheet" href="../fontawesome/css/brands.css">
-  <link rel="stylesheet" href="../fontawesome/css/regular.css">
-  <link rel="stylesheet" href="../fontawesome/css/solid.css">
-  <link rel="stylesheet" href="../fontawesome/css/svg-with-js.css">
-  <link rel="stylesheet" href="../fontawesome/css/v4-shims.css">
-  <script src="../fontawesome/js/all.js"></script> -->
+  <link rel="stylesheet" href="{{asset('public/fontawesome/css/fontawesome.css')}}">
+  <link rel="stylesheet" href="{{asset('public/fontawesome/css/brands.css')}}">
+  <link rel="stylesheet" href="{{asset('public/fontawesome/css/regular.css')}}">
+  <link rel="stylesheet" href="{{asset('public/fontawesome/css/solid.css')}}">
+  <link rel="stylesheet" href="{{asset('public/fontawesome/css/svg-with-js.css')}}">
+  <link rel="stylesheet" href="{{asset('public/fontawesome/css/v4-shims.css')}}">
+  <script src="{{asset('public/fontawesome/js/all.js')}}"></script>
 
   <!-- custom css and js-->
-  <link rel="stylesheet" href="../custom/css/style.css">
-  <script src="../custom/js/script.js"></script>
+  <link rel="stylesheet" href="{{asset('public/custom/css/style.css')}}">
+  <script src="{{asset('public/custom/js/script.js')}}"></script>
   <title>Class Siswa</title>
 </head>
 
@@ -52,7 +52,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
-  <script src="js/swiper.min.js"></script>
+  <script src="{{asset('public/js/swiper.min.js')}}"></script>
 </body>
 
 </html>

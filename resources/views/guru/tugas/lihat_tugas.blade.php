@@ -6,23 +6,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
-    <!-- <link rel="stylesheet" href="../swiper/swiper.min.css" />
-    <link rel="stylesheet" href="../swiper/swiper-custom.css" /> -->
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="{{asset('/bootstrap/css/bootstrap.css')}}">
+     <link rel="stylesheet" href="{{asset('/swiper/swiper.min.css')}}" />
+    <link rel="stylesheet" href="{{asset('/swiper/swiper-custom.css')}}" /> -->
     <!-- Place your kit's code here -->
     <!-- fontawesom -->
     <script src="https://kit.fontawesome.com/70d50d2d9f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{asset('fontawesome/css/fontawesome.css')}}">
+    <link rel="stylesheet" href="{{asset('fontawesome/css/brands.css')}}">
+    <link rel="stylesheet" href="{{asset('fontawesome/css/regular.css')}}">
+    <link rel="stylesheet" href="{{asset('fontawesome/css/solid.css')}}">
+    <link rel="stylesheet" href="{{asset('fontawesome/css/svg-with-js.css')}}">
+    <link rel="stylesheet" href="{{asset('fontawesome/css/v4-shims.css')}}">
 
     <!-- hover master -->
-    <link rel="stylesheet" href="../Hover/css/hover.css">
+    <link rel="stylesheet" href="{{asset('/Hover/css/hover.css')}}">
     <!-- custom css -->
-    <link rel="stylesheet" href="../custom/css/style.css">
-    <script src="../custom/js/script.js"></script>
+    <link rel="stylesheet" href="{{asset('/custom/css/style.css')}}">
+    <script src="{{asset('/custom/js/script.js')}}"></script>
 
     <!-- datatable -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.css')}}" />
 
     <title>Tugas</title>
 </head>
@@ -41,7 +46,7 @@
                 <li class="list-inline-item active dropdown">
                     <a class="" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">
-                        <img src="../img/belajar.jpg" alt="" class="rounded-circle" width=30 height=30>
+                        <img src="{{asset('/img/belajar.jpg')}}" alt="" class="rounded-circle" width=30 height=30>
                     </a>
                     <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
                         <div class=" dropdown-header noti-title">
@@ -143,7 +148,7 @@
                     <div class="collapse mt-3" id="CollapseBagiTugas">
                         <div class="card">
                             <div class="container">
-                            <form action="/guruuu/{{ $m->slug }}/upload_tugas" method="POST" enctype="multipart/form-data">
+                            <form action="/guruuu/{{ $m->slug }}/upload_tugas" method="post" enctype="multipart/form-data">
                                 {{ csrf_field() }} 
                                     <input type="hidden" name="mapel_id" value="{{ $mapel->id }}">
                                     <input type="hidden" name="rombel_id" value="{{ $mapel->rombel_id }}">
@@ -207,7 +212,7 @@
                                                                 <div class="modal-footer">
                                                                     <button type="button" class="btn btn-secondary"
                                                                         data-dismiss="modal">Batal</button>
-                                                                    <button type="button" class="btn btn-info">Tambahkan
+                                                                    <button type="submit" class="btn btn-info">Tambahkan
                                                                         File</button>
                                                                 </div>
                                                             </div>
@@ -627,22 +632,22 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    {{-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-    </script>
+    </script> --}}
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    {{-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-    </script>
+    </script> --}}
     
     <!-- datatable -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    {{-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> --}}
     <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/datatables.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="{{asset('adminn/assets/vendor/jquery/jquery.min.js')}}" ></script>
+<script src="{{asset('bootstrap/js/bootstrap.min.js')}}"></script>
 
     <script>
         $(document).ready(function () {
